@@ -10,12 +10,12 @@ export default function Footer() {
                         <Store size={18} className="text-#dc9f42"/>
                         <span className="font-serif text-lg font-bold text-#fdf8f0">Shop<span className="text-#dc9f42">Vault</span></span>
                     </div>
-                    <div className="flex gap-6 text-sm">
+                    <div className="flex gap-5 text-sm">
                         <Link to='/' className="hover:text-#dc9f42 transition">Shop</Link>
                         <Link to='/cart' className="hover:text-#dc9f42 transition">Cart</Link>
                         <Link to='/login' className="hover:text-#dc9f42 transition">Login</Link>
                     </div>
-                    <p className="text-xs text-#a86814">Powered by {" "}<a href="https://fakestoreapi.com" target="_blank" rel="noreferrer" className="text-#dc9f42 hover:underline">FakeStoreAPI</a>{" "} Built with React + Redux Toolkit</p>
+                    <p className="text-xs text-#a86814">Powered by {"  "}<a href="https://fakestoreapi.com" target="_blank" rel="noreferrer" className="text-#dc9f42 hover:underline">FakeStoreAPI</a>{"  "} Built with React + Redux Toolkit</p>
                 </div>
             </div>
         </footer>

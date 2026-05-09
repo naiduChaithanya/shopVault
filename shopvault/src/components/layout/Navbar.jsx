@@ -2,7 +2,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../../hooks/useAuth";
 import { useCart } from "../../hooks/useCart";
 import { useCallback, useState } from "react";
-import { LogOut, ShoppingCart, Store, User } from "lucide-react";
+import { LogOut, Menu, ShoppingCart, Store, User } from "lucide-react";
 
 export default function Navbar(){
     const {isAuthenticated, user, handleLogout} = useAuth();
@@ -17,8 +17,8 @@ export default function Navbar(){
     }, [handleLogout, navigate]);
 
     return (
-        <header className="sticky top-0 z-50 bg-#341c08 text-#fdf8f0 shadow-lg">
-            <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-baseline h-16">
+        <header className="sticky top-0 z-50 bg-#341c08 text-#d4cec4 shadow-lg bg-gray-100">
+            <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
                 {/* logo */}
                 <Link to="/" className="flex items-center gap-2 group">
                     <Store size={22} className="text-#dc9f42 group-hover:text-#e8be7a transistion"/>
